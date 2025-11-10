@@ -1,0 +1,30 @@
+database:
+  dialect: sqlite
+  database: data_warehouse.db
+
+api:
+  weather_base_url: "https://api.openweathermap.org/data/2.5/weather"
+
+data_sources:
+  csv_url: "https://raw.githubusercontent.com/datasets/city-population/main/data/city-population.csv"
+
+tables:
+  staging:
+    weather: "staging_weather"
+    population: "staging_population"
+  warehouse:
+    fact_weather: "fact_weather"
+    dim_city: "dim_city"
+    dim_date: "dim_date"
+
+cities:
+  - city: "London"
+    country: "GB"
+  - city: "New York"
+    country: "US"
+  - city: "Tokyo"
+    country: "JP"
+  - city: "Sydney"
+    country: "AU"
+  - city: "Berlin"
+    country: "DE"

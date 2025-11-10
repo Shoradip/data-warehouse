@@ -25,3 +25,23 @@ A complete ETL pipeline that combines weather data from OpenWeatherMap API with 
 - Pandas for data processing
 
 ## 📁 Project Structure
+data-warehouse/
+├── src/ # ETL source code
+├── sql/ # Database schemas and queries
+├── config/ # Configuration files
+├── logs/ # Application logs
+└── data/ # Data files
+
+## 🚦 Quick Start
+
+1. Clone repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Set up environment variables in `.env`
+4. Run: `python main.py`
+
+## 📈 Sample Queries
+
+See `sql/queries.sql` for business intelligence queries including:
+- Average temperatures by city
+- Weather patterns by month
+- Population vs weather correlations
